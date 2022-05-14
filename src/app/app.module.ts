@@ -16,6 +16,8 @@ import { AddSubcategoryComponent } from './components/add-subcategory/add-subcat
 import { ProductsComponent } from './components/products/products.component';
 import { AddProductsComponent } from './components/add-products/add-products.component';
 import { MaterialModule } from './module/material/material.module';
+import { DetailsComponent } from './client/details/details.component';
+import { ClienthomeComponent } from './client/clienthome/clienthome.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { MaterialModule } from './module/material/material.module';
     SubcategoryComponent,
     AddSubcategoryComponent,
     ProductsComponent,
-    AddProductsComponent
+    AddProductsComponent,
+    DetailsComponent,
+    ClienthomeComponent
   ],
   imports: [
     BrowserModule,
