@@ -15,6 +15,7 @@ import { SubcategoryComponent } from './components/subcategory/subcategory.compo
 import { AddSubcategoryComponent } from './components/add-subcategory/add-subcategory.component';
 import { ProductsComponent } from './components/products/products.component';
 import { AddProductsComponent } from './components/add-products/add-products.component';
+import { MaterialModule } from './module/material/material.module';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AddProductsComponent } from './components/add-products/add-products.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
