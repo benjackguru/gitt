@@ -16,8 +16,8 @@ import { SubcategoryComponent } from './components/subcategory/subcategory.compo
 import { VendorComponent } from './components/vendor/vendor.component';
 
 const routes: Routes = [
-  // {path:'home', component:HomeComponent},
- // {path:'',redirectTo:'home', pathMatch:'full'},
+ {path:'home', component:HomeComponent},
+ {path:'',redirectTo:'home', pathMatch:'full'},
   {path:'vendor', component:VendorComponent},
   {path:'add-vendor', component:AddVendorComponent},
   {path:'category', component:CategoryComponent},
