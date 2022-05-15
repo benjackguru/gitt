@@ -21,6 +21,8 @@ import { ClienthomeComponent } from './client/clienthome/clienthome.component';
 import { MovielistComponent } from './components/movielist/movielist.component';
 import { AddMovieComponent } from './components/add-movie/add-movie.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
