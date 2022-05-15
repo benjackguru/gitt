@@ -18,6 +18,9 @@ import { AddProductsComponent } from './components/add-products/add-products.com
 import { MaterialModule } from './module/material/material.module';
 import { DetailsComponent } from './client/details/details.component';
 import { ClienthomeComponent } from './client/clienthome/clienthome.component';
+import { MovielistComponent } from './components/movielist/movielist.component';
+import { AddMovieComponent } from './components/add-movie/add-movie.component';
+import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { ClienthomeComponent } from './client/clienthome/clienthome.component';
     ProductsComponent,
     AddProductsComponent,
     DetailsComponent,
-    ClienthomeComponent
+    ClienthomeComponent,
+    MovielistComponent,
+    AddMovieComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
