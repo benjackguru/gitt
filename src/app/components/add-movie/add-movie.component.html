@@ -1,7 +1,48 @@
-<div class="container">
+<div class="container mt-3" style="background-color: white; padding: 20px; ">
     <h1 mat-dialog-title mat-dialog-action [align]="'center'" >Add Movie Form</h1>
     <div mat-dialog-action [align]="'center'" >
-        <form [formGroup]="movieForm"></form>
+        <form [formGroup]="movieForm">
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Movie name</mat-label>
+                    <input formControlName="moviename" type="text" matInput placeholder="Moviename" >
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Quality</mat-label>
+                    <input formControlName="quality" type="text" matInput placeholder="quality" >
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>language</mat-label>
+                    <input formControlName="language" type="text" matInput placeholder="language" >
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>400mb link</mat-label>
+                    <input formControlName="lq" type="text" matInput placeholder="400mb link" >
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>700mb link</mat-label>
+                    <input formControlName="mq" type="text" matInput placeholder="700mb link" >
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>1.4gb link</mat-label>
+                    <input formControlName="hq" type="text" matInput placeholder="1.4gb link" >
+                </mat-form-field>
+            </div>
+
+        </form>
 
     </div>
+    <div mat-dialog-action [align]="'center'">
+        <button style="margin-left: 8px" mat-raised-button color="primary"> Save</button>
+      </div>
 </div>
