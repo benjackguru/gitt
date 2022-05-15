@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-movie-detail',
@@ -6,8 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movie-detail.component.css']
 })
 export class MovieDetailComponent implements OnInit {
+  getId:any;
+  updateForm!:FormGroup;
 
-  constructor() { }
+  constructor(private formBilder:FormBuilder, private router:Router,private ngzone:NgZone,private activatedRoute:ActivatedRoute) { 
+    this.getId = this.activatedRoute.snapshot.paramMap.get('id');
+    
+    this.updateForm=this.formBilder.group({
+      moviename:[''],
+      quality:[''],
+      language:[''],
+      lq:[''],
+      mq:[''],
+      hq:[''],
+
+    })
+  }
 
   ngOnInit(): void {
   }
