@@ -7,7 +7,7 @@
         <div class="col-md-8" style="background-color: white;">
             <div class="row">
                 <div class="d-flex justify-content-center align-items-center text-align-center mt-3">
-                    <h1 style="font-size: 12px; font-weight: 600; margin-bottom: 0px;">
+                    <h1 style="font-size: 16px; font-weight: 600; margin-bottom: 0px;">
                         <span style="color: red;"> DOWNLOAD AND WATCH ONLINE ON LATEST MOVIES</span> - <span
                             style="color: blue;"> JOIN TELEGRAM FOR UPDATES </span>
                     </h1>
@@ -16,11 +16,11 @@
 
             <hr>
             <div class="row">
-                <div class="d-flex justify-content-center align-items-center text-align-center">
-                    <h1 style="font-size: 13px; font-weight: 600;">
-                        Moviename(year) print type - [1080P- [Tamil+Telugu] - 1.4gb] -
-                        [720P- [Tamil+Telugu] - 700mb ] - [360P- [Tamil+Telugu] - 400mb ]
-                    </h1>
+                <div class=" d-flex justify-content-center align-items-center text-align-center" style="flex-direction:column ;">
+                    <div class="div" *ngFor="let movie of movies;let i =index">
+                        <!-- <li class="collection-item" >{{i+1}} {{movie.name}} - [ {{movie.quality}} ] - <a href="{{movie.mq}}">[HQ HDRip - x264 - MP3 - x264 - 700MB - ESubs]</a> - <a href="" class="four">[HQ HDRip  - x264 - MP3 - x264 - 400MB - ESubs]</a> - <a href="" class="online">(Watch online)</a></li> -->
+                        <h1 style="font-family: sans-serif; font-size: 12px; font-weight: 600; margin: 0px; line-height: 20px; margin-top: 5px;"> {{movie.name}} - [ {{movie.quality}} ] - <a style="text-decoration: none; color: rgb(142, 0, 0);" href="{{movie.hq}}">[1080P-{{movie.language}}-1.4gb]</a> - <a style="text-decoration: none; color: rgb(85, 142, 0);" href="{{movie.lq}}">[720P-{{movie.language}}-700mb ]</a> - <a style="text-decoration: none; color: rgb(0, 7, 142);" href="{{movie.lq}}">[360P-{{movie.language}}- 400mb ]</a></h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -32,10 +32,11 @@
                 </h1>
             </div>
             <hr>
-            <div>
-                <h1 style="font-size: 12px; font-weight: 600; margin: 0px; line-height: 20px;">Moviename(year) print type - [1080P-[Tamil+Telugu]-1.4gb] - [720P-[Tamil+Telugu]-700mb ] - [360P-[Tamil+Telugu]- 400mb ]</h1>
+            <div *ngFor="let movie of movies;let i =index">
+                <h1 style="font-size: 12px; font-weight: 600; margin: 0px; line-height: 20px;">{{movie.name}} - [ {{movie.quality}} ] - <a style="text-decoration: none; color: rgb(142, 0, 0);" href="{{movie.hq}}">[1080P-[Tamil+Telugu]-1.4gb]</a> - <a style="text-decoration: none; color: rgb(85, 142, 0);" href="{{movie.lq}}">[720P-[Tamil+Telugu]-700mb ]</a> - <a style="text-decoration: none; color: rgb(0, 7, 142);" href="{{movie.lq}}">[360P-[Tamil+Telugu]- 400mb ]</a></h1>
+                <hr>
             </div>
-            <hr>
+            
             
         </div>
 
